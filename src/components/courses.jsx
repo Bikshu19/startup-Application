@@ -1,18 +1,20 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 function Courses() {
   return (
     <div style={{'backgroundColor': '#F4F5FA'}}>
         <section className="body-font" style={{'padding':'10px'}}>
   <div className="container px-5 py-1 mx-auto">
-    <div className="flex flex-col text-center w-full mb-10">
-      <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-[#320A6B]">
-        Courses Offered
-      </h1>
-      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-        At Aadhya Infotech, we offer a wide range of industry-relevant IT training programs designed to equip students and professionals with the skills needed to succeed in today’s digital landscape. Our courses are structured to be practical, job-oriented, and beginner-friendly, with a strong focus on hands-on learning and real-world applications.
-      </p>
-    </div>
+    <div className="flex flex-col text-center w-full mb-10 px-4 sm:px-6 lg:px-8">
+  <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-[#320A6B] hover:cursor-default">
+    Courses Offered
+  </h1>
+  <p className="lg:w-2/3 mx-auto leading-relaxed text-base hover:cursor-default">
+    At Aadhya Infotech, we offer a wide range of industry-relevant IT training programs designed to equip students and professionals with the skills needed to succeed in today’s digital landscape. Our courses are structured to be practical, job-oriented, and beginner-friendly, with a strong focus on hands-on learning and real-world applications.
+  </p>
+</div>
+
     <div className="flex flex-wrap -m-4">
       <div className="lg:w-1/3 sm:w-1/2 p-4 hover:cursor-pointer">
         <div className="flex relative">
@@ -31,11 +33,11 @@ function Courses() {
             <p className="leading-relaxed">
               Learn the fundamentals of deep learning and neural networks using real-world projects.
             </p>
-            <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <Link className="text-indigo-500 inline-flex items-center mt-3" to='/courses'>Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </a>
+        </Link>
           </div>
         </div>
       </div>
@@ -56,11 +58,11 @@ function Courses() {
             <p className="leading-relaxed">
               Learn to build AI systems that generate text, images, and more using cutting-edge tools.
             </p>
-            <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <Link className="text-indigo-500 inline-flex items-center mt-3" to='/courses'>Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </a>
+        </Link>
           </div>
         </div>
       </div>
@@ -81,11 +83,11 @@ function Courses() {
             <p className="leading-relaxed">
             hands-on experience in building intelligent systems using supervised, unsupervised...
             </p>
-            <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <Link className="text-indigo-500 inline-flex items-center mt-3" to='/courses'>Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </a>
+        </Link>
           </div>
         </div>
       </div>
@@ -106,11 +108,11 @@ function Courses() {
             <p className="leading-relaxed">
              Learn object-oriented programming, data handling, and application development
             </p>
-            <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <Link className="text-indigo-500 inline-flex items-center mt-3" to='/courses'>Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </a>
+        </Link>
           </div>
         </div>
       </div>
@@ -131,11 +133,11 @@ function Courses() {
             <p className="leading-relaxed">
               Learn to design and develop responsive, dynamic websites.help very much and faster.
             </p>
-            <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <Link className="text-indigo-500 inline-flex items-center mt-3" to='/courses'>Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </a>
+        </Link>
           </div>
         </div>
       </div>
@@ -156,11 +158,11 @@ function Courses() {
             <p className="leading-relaxed">
               Learn how to build modern, component-based web applications using React.js
             </p>
-            <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <Link className="text-indigo-500 inline-flex items-center mt-3" to='/courses'>Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </a>
+        </Link>
           </div>
         </div>
       </div>
