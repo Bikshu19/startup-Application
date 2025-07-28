@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { FaCommentDots } from 'react-icons/fa';
+import React, { useState, useEffect, useRef } from "react";
+import { FaCommentDots } from "react-icons/fa";
 
 const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
-    { sender: 'bot', text: '👋 Hello! How can I help you today?' },
+    { sender: "bot", text: "👋 Hello! How can I help you today?" },
   ]);
 
   const chatEndRef = useRef(null);
@@ -13,26 +13,27 @@ const ChatWidget = () => {
   const handleSend = () => {
     if (!input.trim()) return;
 
-    const userMsg = { sender: 'user', text: input };
+    const userMsg = { sender: "user", text: input };
     const botMsg = {
-      sender: 'bot',
+      sender: "bot",
       text: getBotReply(input),
     };
 
     setMessages((prev) => [...prev, userMsg, botMsg]);
-    setInput('');
+    setInput("");
   };
 
   const getBotReply = (message) => {
     const msg = message.toLowerCase();
-    if (msg.includes('hello') || msg.includes('hi')) return 'Hi there! 👋';
-    if (msg.includes('services')) return 'We offer web, AI, and cloud solutions. ☁️';
-    if (msg.includes('contact')) return 'Reach us at support@infotech.com 📩';
+    if (msg.includes("hello") || msg.includes("hi")) return "Hi there! 👋";
+    if (msg.includes("services"))
+      return "We offer web, AI, and cloud solutions. ☁️";
+    if (msg.includes("contact")) return "Reach us at support@infotech.com 📩";
     return "I'm not sure I understand. Try asking about services or contact info.";
   };
 
   useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
   return (
@@ -40,7 +41,9 @@ const ChatWidget = () => {
       {/* Chat window */}
       <div
         className={`transition-all duration-300 ease-in-out ${
-          isOpen ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-5 pointer-events-none'
+          isOpen
+            ? "opacity-100 scale-100 translate-y-0"
+            : "opacity-0 scale-95 translate-y-5 pointer-events-none"
         }`}
       >
         <div className="w-80 h-96 bg-white/90 backdrop-blur-md border border-gray-200 rounded-xl shadow-2xl flex flex-col p-4">
@@ -59,24 +62,24 @@ const ChatWidget = () => {
               <div
                 key={i}
                 className={`flex items-end ${
-                  msg.sender === 'user' ? 'justify-end' : 'justify-start'
+                  msg.sender === "user" ? "justify-end" : "justify-start"
                 }`}
               >
-                {msg.sender === 'bot' && (
+                {msg.sender === "bot" && (
                   <div className="w-7 h-7 bg-green-500 text-white flex items-center justify-center rounded-full mr-2 text-xs">
                     🤖
                   </div>
                 )}
                 <div
                   className={`px-3 py-2 rounded-lg max-w-[70%] ${
-                    msg.sender === 'user'
-                      ? 'bg-blue-500 text-white rounded-br-none'
-                      : 'bg-gray-200 text-gray-800 rounded-bl-none'
+                    msg.sender === "user"
+                      ? "bg-blue-500 text-white rounded-br-none"
+                      : "bg-gray-200 text-gray-800 rounded-bl-none"
                   }`}
                 >
                   {msg.text}
                 </div>
-                {msg.sender === 'user' && (
+                {msg.sender === "user" && (
                   <div className="w-7 h-7 bg-blue-500 text-white flex items-center justify-center rounded-full ml-2 text-xs">
                     🧑
                   </div>
@@ -91,7 +94,7 @@ const ChatWidget = () => {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+              onKeyDown={(e) => e.key === "Enter" && handleSend()}
               placeholder="Type a message..."
               className="flex-1 border border-gray-300 px-3 py-1.5 rounded-md text-sm focus:outline-none"
             />
