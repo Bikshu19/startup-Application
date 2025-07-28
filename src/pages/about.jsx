@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import Image from "../components/Image";
 import Aboutsection from "../components/aboutsection";
+import AboutPageImage from "../components/AboutPageImage";
 
 function About() {
   return (
@@ -11,7 +12,7 @@ function About() {
         <Navbar />
       </div>
       <div>
-        <Image />
+        <AboutPageImage />
       </div>
       <div>
         <Aboutsection />
