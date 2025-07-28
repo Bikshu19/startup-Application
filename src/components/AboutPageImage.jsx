@@ -7,7 +7,7 @@ function AboutPageImage() {
   return (
     <div className="relative w-screen h-screen">
       <img
-        src="/1d.jpg"
+        src="/1e.png"
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover object-center z-0"
       />

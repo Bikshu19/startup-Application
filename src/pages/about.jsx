@@ -1,17 +1,16 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
-import Image from "../components/Image";
-import Aboutsection from "../components/aboutsection";
 import WhatsAppButton from "../components/whatsapp";
 import ChatWidget from "../components/ChatWidget";
+import AboutPageImage from "../components/AboutPageImage";
 
 function About() {
   return (
     <div>
       <Navbar />
-      <Image />
-      <Aboutsection />
+      <AboutPageImage />
+
       <WhatsAppButton />
       <ChatWidget />
       <Footer />

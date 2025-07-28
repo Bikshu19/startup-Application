@@ -3,11 +3,14 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import WhatsAppButton from "../components/whatsapp";
 import ChatWidget from "../components/ChatWidget";
+import ContactForm from "../components/ContactForm";
+import ContactPage from "../components/ContactForm";
 
 function Contact() {
   return (
     <div>
       <Navbar />
+      <ContactPage />
       <WhatsAppButton />
       <ChatWidget />
       <Footer />
