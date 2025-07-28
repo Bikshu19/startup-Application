@@ -3,20 +3,17 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import Image from "../components/Image";
 import Aboutsection from "../components/aboutsection";
-import AboutPageImage from "../components/AboutPageImage";
+import WhatsAppButton from "../components/whatsapp";
+import ChatWidget from "../components/ChatWidget";
 
 function About() {
   return (
     <div>
-      <div>
-        <Navbar />
-      </div>
-      <div>
-        <AboutPageImage />
-      </div>
-      <div>
-        <Aboutsection />
-      </div>
+      <Navbar />
+      <Image />
+      <Aboutsection />
+      <WhatsAppButton />
+      <ChatWidget />
       <Footer />
     </div>
   );

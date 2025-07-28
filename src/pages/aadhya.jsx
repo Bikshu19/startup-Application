@@ -1,16 +1,18 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/footer';
+import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/footer";
+import WhatsAppButton from "../components/whatsapp";
+import ChatWidget from "../components/ChatWidget";
 
 function Aadhya() {
   return (
     <div>
-        <div>
-            <Navbar/>
-        </div>
-        <Footer/>
+      <Navbar />
+      <WhatsAppButton />
+      <ChatWidget />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Aadhya
+export default Aadhya;
