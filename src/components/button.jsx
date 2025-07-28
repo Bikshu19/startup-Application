@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Mail } from 'lucide-react';
+import {Link} from 'react-router-dom';
 
 export default function HeroButtons() {
   return (
@@ -8,7 +9,7 @@ export default function HeroButtons() {
         type="button"
         className="w-full sm:w-auto min-w-[180px] md:min-w-[220px] lg:min-w-[260px] bg-[#320A6B] hover:bg-[#22074d] text-white font-semibold py-2 px-6 md:py-3 md:px-8 lg:py-4 lg:px-10 text-base md:text-lg lg:text-xl rounded-full flex items-center justify-center gap-2 transition duration-300 hover:cursor-pointer"
       >
-        Get Started
+        <Link to='/blog'>Get Started</Link>
         <ArrowRight className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
       </button>
 
@@ -16,7 +17,7 @@ export default function HeroButtons() {
         type="button"
         className="w-full sm:w-auto min-w-[180px] md:min-w-[220px] lg:min-w-[260px] bg-white hover:bg-gray-200 text-[#320A6B] font-semibold py-2 px-6 md:py-3 md:px-8 lg:py-4 lg:px-10 text-base md:text-lg lg:text-xl rounded-full flex items-center justify-center gap-2 transition duration-300 hover:cursor-pointer"
       >
-        Contact Us
+       <Link to='/contact' > Contact Us</Link>
         <Mail className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
       </button>
     </div>
