@@ -1,13 +1,15 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/footer';
+import WhatsAppButton from '../components/whatsapp';
+import ChatWidget from '../components/ChatWidget';
 
 function Blog() {
   return (
     <div>
-        <div>
-            <Navbar/>
-        </div>
+        <Navbar/>
+        <WhatsAppButton/>
+        <ChatWidget/>
         <Footer/>
     </div>
   )
