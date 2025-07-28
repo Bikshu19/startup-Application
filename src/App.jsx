@@ -6,6 +6,7 @@ import Contact from './pages/contact';
 import About from './pages/about';
 import Blog from './pages/blog'
 import './App.css';
+import WhatsAppButton from './components/whatsapp'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/Courses' element={<Courses/>}/>
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Blog' element={<Blog/>}/>
+        <Route path='/whatsapp' element={<WhatsAppButton/>}/>
       </Routes>
     </BrowserRouter>
   );
