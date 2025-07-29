@@ -1,10 +1,12 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/footer';
-import WhatsAppButton from '../components/whatsapp';
-import ChatWidget from '../components/ChatWidget';
-import ContactPage from '../components/ContactForm'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/footer";
+import WhatsAppButton from "../components/whatsapp";
+import ChatWidget from "../components/ChatWidget";
 
+import ContactPage from "../components/ContactForm";
+import ContactCards from "../components/ContactCards";
+import CustomerCare from "../components/CustomerCare";
 
 function Contact() {
   return (
