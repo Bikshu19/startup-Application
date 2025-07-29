@@ -51,16 +51,16 @@ const ContactPage = () => {
           <p className="text-sm text-gray-600 mb-2">
             📞{" "}
             <a
-              href="tel:+919876543210"
+              href="tel:+916301851252"
               className="text-blue-600 hover:underline"
             >
-              +91 98765 43210
+              +91 63018 51252
             </a>
           </p>
           <p className="text-sm text-gray-600 mb-2">
             💬{" "}
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/916301851252"
               target="_blank"
               rel="noopener noreferrer"
               className="text-green-600 hover:underline"
