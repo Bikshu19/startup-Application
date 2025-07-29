@@ -5,12 +5,14 @@ import Aadhya from './pages/aadhya';
 import Contact from './pages/contact';
 import About from './pages/about';
 import Blog from './pages/blog';
+import WhatsAppButton from './components/whatsapp';
+import ScrollToTop from './components/ScrollToTop'; // ✅ import this
 import './App.css';
-import WhatsAppButton from './components/whatsapp'; // ✅ This is correct
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop /> {/* ✅ add this just after BrowserRouter */}
       <div>
         <Routes>
           <Route path="/" element={<Homepage />} />
