@@ -15,10 +15,10 @@ function Courses() {
   </p>
  <div className="text-right">
   <Link
-    className="text-indigo-500 inline-flex items-center mt-3"
+    className="text-indigo-500 inline-flex items-center mt-3 hover:cursor-pointer"
     to="/courses"
   >
-    Learn More
+    View More
     <svg
       fill="none"
       stroke="currentColor"
@@ -52,7 +52,7 @@ function Courses() {
             <p className="leading-relaxed">
               Learn the fundamentals of deep learning and neural networks using real-world projects.
             </p>
-            <Link className="text-indigo-500 inline-flex items-center mt-3" to='/courses'>Learn More
+            <Link className="text-indigo-500 inline-flex items-center mt-3 " to='/courses'>Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>

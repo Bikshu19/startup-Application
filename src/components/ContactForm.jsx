@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const ContactPage = () => {
+  
   const [userCoords, setUserCoords] = useState(null);
   const [distanceKm, setDistanceKm] = useState(null);
   const [modalImage, setModalImage] = useState(null);
