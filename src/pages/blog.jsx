@@ -1,18 +1,18 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/footer';
-import WhatsAppButton from '../components/whatsapp';
-import ChatWidget from '../components/ChatWidget';
+import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/footer";
+import WhatsAppButton from "../components/whatsapp";
+import ChatWidget from "../components/ChatWidget";
 
 function Blog() {
   return (
     <div>
-        <Navbar/>
-        <WhatsAppButton/>
-        <ChatWidget/>
-        <Footer/>
+      <Navbar />
+      <WhatsAppButton />
+      <ChatWidget />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Blog
+export default Blog;
