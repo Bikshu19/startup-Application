@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
+import React, { useState, useEffect, useRef } from "react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
 const TeamCarousel = () => {
   const [selected, setSelected] = useState(0);
@@ -7,99 +7,105 @@ const TeamCarousel = () => {
 
   const team = [
     {
-      name: 'Shamyutha Gembali',
-      role: 'Full Stack Developer',
-      image: '/images/shamyutha.jpg',
+      name: "Shamyutha Gembali",
+      role: "Full Stack Developer",
+      image: "/images/Elon.jpg",
     },
     {
-      name: 'Swathi Rao',
-      role: 'Frontend Developer',
-      image: '/images/swathi.jpg',
+      name: "Swathi Rao",
+      role: "Frontend Developer",
+      image: "/images/swathi.jpg",
     },
     {
-      name: 'Ravi Kumar',
-      role: 'AI/ML Engineer',
-      image: '/images/ravi.jpg',
+      name: "Ravi Kumar",
+      role: "AI/ML Engineer",
+      image: "/images/ravi.jpg",
     },
     {
-      name: 'Anjali Mehra',
-      role: 'UI/UX Designer',
-      image: '/images/anjali.jpg',
+      name: "Anjali Mehra",
+      role: "UI/UX Designer",
+      image: "/images/anjali.jpg",
     },
     {
-      name: 'Vikram Reddy',
-      role: 'Data Analyst',
-      image: '/images/vikram.jpg',
+      name: "Vikram Reddy",
+      role: "Data Analyst",
+      image: "/images/vikram.jpg",
     },
     {
-      name: 'Kiran Joshi',
-      role: 'App Developer',
-      image: '/images/kiran.jpg',
-    },{
-      name: 'Ravi Kumar',
-      role: 'AI/ML Engineer',
-      image: '/images/ravi.jpg',
+      name: "Kiran Joshi",
+      role: "App Developer",
+      image: "/images/kiran.jpg",
     },
     {
-      name: 'Anjali Mehra',
-      role: 'UI/UX Designer',
-      image: '/images/anjali.jpg',
+      name: "Ravi Kumar",
+      role: "AI/ML Engineer",
+      image: "/images/ravi.jpg",
     },
     {
-      name: 'Vikram Reddy',
-      role: 'Data Analyst',
-      image: '/images/vikram.jpg',
+      name: "Anjali Mehra",
+      role: "UI/UX Designer",
+      image: "/images/anjali.jpg",
     },
     {
-      name: 'Kiran Joshi',
-      role: 'App Developer',
-      image: '/images/kiran.jpg',
-    },{
-      name: 'Ravi Kumar',
-      role: 'AI/ML Engineer',
-      image: '/images/ravi.jpg',
+      name: "Vikram Reddy",
+      role: "Data Analyst",
+      image: "/images/vikram.jpg",
     },
     {
-      name: 'Anjali Mehra',
-      role: 'UI/UX Designer',
-      image: '/images/anjali.jpg',
+      name: "Kiran Joshi",
+      role: "App Developer",
+      image: "/images/kiran.jpg",
     },
     {
-      name: 'Vikram Reddy',
-      role: 'Data Analyst',
-      image: '/images/vikram.jpg',
+      name: "Ravi Kumar",
+      role: "AI/ML Engineer",
+      image: "/images/ravi.jpg",
     },
     {
-      name: 'Kiran Joshi',
-      role: 'App Developer',
-      image: '/images/kiran.jpg',
-    },{
-      name: 'Ravi Kumar',
-      role: 'AI/ML Engineer',
-      image: '/images/ravi.jpg',
+      name: "Anjali Mehra",
+      role: "UI/UX Designer",
+      image: "/images/anjali.jpg",
     },
     {
-      name: 'Anjali Mehra',
-      role: 'UI/UX Designer',
-      image: '/images/anjali.jpg',
+      name: "Vikram Reddy",
+      role: "Data Analyst",
+      image: "/images/vikram.jpg",
     },
     {
-      name: 'Vikram Reddy',
-      role: 'Data Analyst',
-      image: '/images/vikram.jpg',
+      name: "Kiran Joshi",
+      role: "App Developer",
+      image: "/images/kiran.jpg",
     },
     {
-      name: 'Kiran Joshi',
-      role: 'App Developer',
-      image: '/images/kiran.jpg',
-    }
+      name: "Ravi Kumar",
+      role: "AI/ML Engineer",
+      image: "/images/ravi.jpg",
+    },
+    {
+      name: "Anjali Mehra",
+      role: "UI/UX Designer",
+      image: "/images/anjali.jpg",
+    },
+    {
+      name: "Vikram Reddy",
+      role: "Data Analyst",
+      image: "/images/vikram.jpg",
+    },
+    {
+      name: "Kiran Joshi",
+      role: "App Developer",
+      image: "/images/kiran.jpg",
+    },
     // ... more repeated entries
   ];
 
   const scroll = (direction) => {
     if (!carouselRef.current) return;
     const container = carouselRef.current;
-    container.scrollBy({ left: direction === 'left' ? -200 : 200, behavior: 'smooth' });
+    container.scrollBy({
+      left: direction === "left" ? -200 : 200,
+      behavior: "smooth",
+    });
   };
 
   // Auto-scroll effect
@@ -107,7 +113,7 @@ const TeamCarousel = () => {
     const interval = setInterval(() => {
       setSelected((prev) => {
         const next = (prev + 1) % team.length;
-        scroll('right');
+        scroll("right");
         return next;
       });
     }, 3000); // Change slide every 3 seconds
@@ -117,9 +123,9 @@ const TeamCarousel = () => {
 
   return (
     <div className="bg-[#0B0F34] text-white py-12 px-4">
-        <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-[#ffffff] hover:cursor-default text-center">
-    Domain Experts
-  </h1>
+      <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-[#ffffff] hover:cursor-default text-center">
+        Domain Experts
+      </h1>
       {/* Display Selected Profile */}
       <div className="text-center mb-10">
         <h3 className="text-xl font-bold flex items-center justify-center gap-2">
@@ -133,7 +139,7 @@ const TeamCarousel = () => {
       <div className="flex items-center justify-center relative">
         <button
           onClick={() => {
-            scroll('left');
+            scroll("left");
             setSelected((prev) => (prev - 1 + team.length) % team.length);
           }}
           className="absolute left-2 z-10 p-1 rounded-full hover:bg-gray-700/30"
@@ -151,7 +157,9 @@ const TeamCarousel = () => {
               key={idx}
               onClick={() => setSelected(idx)}
               className={`rounded-full border-4 transition duration-300 shrink-0 ${
-                selected === idx ? 'border-white scale-105' : 'border-transparent opacity-80'
+                selected === idx
+                  ? "border-white scale-105"
+                  : "border-transparent opacity-80"
               } cursor-pointer`}
             >
               <img
@@ -165,7 +173,7 @@ const TeamCarousel = () => {
 
         <button
           onClick={() => {
-            scroll('right');
+            scroll("right");
             setSelected((prev) => (prev + 1) % team.length);
           }}
           className="absolute right-2 z-10 p-1 rounded-full hover:bg-gray-700/30"
