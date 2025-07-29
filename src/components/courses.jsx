@@ -13,8 +13,27 @@ function Courses() {
   <p className="lg:w-2/3 mx-auto leading-relaxed text-base hover:cursor-default">
     At Aadhya Infotech, we offer a wide range of industry-relevant IT training programs designed to equip students and professionals with the skills needed to succeed in today’s digital landscape. Our courses are structured to be practical, job-oriented, and beginner-friendly, with a strong focus on hands-on learning and real-world applications.
   </p>
+ <div className="text-right">
+  <Link
+    className="text-indigo-500 inline-flex items-center mt-3"
+    to="/courses"
+  >
+    Learn More
+    <svg
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      className="w-4 h-4 ml-2"
+      viewBox="0 0 24 24"
+    >
+      <path d="M5 12h14M12 5l7 7-7 7" />
+    </svg>
+  </Link>
 </div>
 
+</div>
     <div className="flex flex-wrap -m-4">
       <div className="lg:w-1/3 sm:w-1/2 p-4 hover:cursor-pointer">
         <div className="flex relative">
