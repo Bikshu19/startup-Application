@@ -9,8 +9,10 @@ function Footer() {
       </div>
 
       {/* Description */}
-      <div className="text-center max-w-4xl mx-auto px-4">
-        <h1 className="sm:text-3xl text-2xl font-bold title-font mb-3 text-[#320A6B]">Raavi Aadhya Infotech</h1>
+      <div className="text-center max-w-4xl mx-auto px-4 mt-4">
+        <h1 className="sm:text-3xl text-2xl font-bold title-font mb-3 text-[#320A6B]">
+          Raavi Aadhya Infotech
+        </h1>
         <p className="text-sm text-gray-600">
           Raavi Aadhya Infotech provides a platform for aspiring professionals through
           high-quality internships, live projects, and hands-on experience in IT,
@@ -24,7 +26,6 @@ function Footer() {
 
       {/* Footer Links */}
       <div className="container px-5 py-12 mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        {/* Column */}
         {[
           {
             title: 'Courses',
@@ -44,7 +45,9 @@ function Footer() {
           },
         ].map((section, idx) => (
           <div key={idx}>
-            <h2 className="title-font font-semibold text-gray-900 text-sm mb-4">{section.title}</h2>
+            <h2 className="title-font font-semibold text-gray-900 text-sm mb-4">
+              {section.title}
+            </h2>
             <ul className="space-y-2">
               {section.items.map((item, i) => (
                 <li key={i}>
@@ -60,15 +63,31 @@ function Footer() {
 
       {/* Footer Bottom */}
       <div className="bg-gray-200">
-        <div className="container mx-auto py-4 px-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-600 text-center sm:text-left">
+        <div className="container mx-auto py-4 px-5 flex flex-col items-center justify-center gap-4">
+          <p className="text-sm text-gray-600 text-center">
             © 2025 Raavi Aadhya Infotech — All rights reserved.
           </p>
+
+          {/* Social Icons */}
           <div className="inline-flex space-x-4">
             {[
-              { name: 'Facebook', href: '#', icon: 'M18 2h-3a5...' },
-              { name: 'Twitter', href: '#', icon: 'M23 3a...' },
-              { name: 'Instagram', href: '#', icon: 'M16 8a...' },
+              {
+                name: 'Facebook',
+                href: '#',
+                icon: 'M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z',
+              },
+              {
+                name: 'Twitter',
+                href: '#',
+                icon:
+                  'M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z',
+              },
+              {
+                name: 'Instagram',
+                href: '#',
+                icon:
+                  'M16 8a6 6 0 11-12 0 6 6 0 0112 0zM2 12a10 10 0 1020 0 10 10 0 00-20 0z',
+              },
             ].map((social, i) => (
               <a
                 key={i}
