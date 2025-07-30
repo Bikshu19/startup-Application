@@ -107,6 +107,7 @@ const CoursesPage = () => {
           alt="Banner"
           className="object-cover w-full h-full"
         />
+        
         <div className="absolute inset-0 flex flex-col justify-between items-center text-center px-4 py-6 bg-gradient-to-b from-black/30 to-transparent">
           <div className="flex-1 flex justify-center items-center">
             <h1 className="text-white text-4xl md:text-5xl font-bold"></h1>
@@ -124,7 +125,7 @@ const CoursesPage = () => {
       </div>
 
       {/* Countdown Banner */}
-      <div className="bg-red-100 text-red-800 text-center py-3 font-semibold text-lg">
+      <div className="bg-[#320A6B] text-white text-center py-3 font-semibold text-lg">
         🎉 50% OFF ends in {countdown}
       </div>
 
@@ -198,11 +199,11 @@ const CoursesPage = () => {
         >
           🎓 Student Success Stories
         </h2>
-        <div className="flex overflow-x-auto space-x-6 px-6">
+        <div className="flex overflow-x-auto space-x-6 px-6 hide-scrollbar">
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="min-w-[250px] bg-gray-100 rounded-xl p-6 shadow-md text-center flex-shrink-0"
+              className="min-w-[250px] bg-gray-100 rounded-xl p-6 shadow-md  hide-scrollbar text-center flex-shrink-0"
             >
               <img
                 src={t.image}
