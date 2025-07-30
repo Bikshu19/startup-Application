@@ -1,13 +1,14 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Homepage from './pages/homepage';
-import Courses from './pages/courses';
-import Aadhya from './pages/aadhya';
-import Contact from './pages/contact';
-import About from './pages/about';
-import Blog from './pages/blog';
-import WhatsAppButton from './components/whatsapp';
-import ScrollToTop from './components/ScrollToTop'; // ✅ import this
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/homepage";
+import Courses from "./pages/courses";
+import Aadhya from "./pages/aadhya";
+import Contact from "./pages/contact";
+import About from "./pages/about";
+import Blog from "./pages/blog";
+
+import WhatsAppButton from "./components/whatsapp";
+import ScrollToTop from "./components/ScrollToTop"; // ✅ import this
+import "./App.css";
 
 function App() {
   return (

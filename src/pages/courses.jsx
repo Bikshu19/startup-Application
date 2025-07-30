@@ -3,14 +3,15 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import WhatsAppButton from "../components/whatsapp";
 import ChatWidget from "../components/ChatWidget";
+import CoursesPage from "../components/CoursesPage";
 
 function Courses() {
   return (
     <div>
       <Navbar />
-      <h1>ALL courses</h1>
+      <CoursesPage />
       <WhatsAppButton />
-      <ChatWidget/>
+      <ChatWidget />
       <Footer />
     </div>
   );
