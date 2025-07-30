@@ -9,90 +9,57 @@ const TeamCarousel = () => {
     {
       name: 'Shamyutha Gembali',
       role: 'Full Stack Developer',
-      image: '/images/shamyutha.jpg',
+      image: '/profiles/1a.png',
     },
     {
       name: 'Swathi Rao',
       role: 'Frontend Developer',
-      image: '/images/swathi.jpg',
-    },
-    {
-      name: 'Ravi Kumar',
-      role: 'AI/ML Engineer',
-      image: '/images/ravi.jpg',
+      image: '/profiles/1b.png',
     },
     {
       name: 'Anjali Mehra',
       role: 'UI/UX Designer',
-      image: '/images/anjali.jpg',
+      image: '/profiles/1d.webp',
     },
     {
       name: 'Vikram Reddy',
       role: 'Data Analyst',
-      image: '/images/vikram.jpg',
+      image: '/profiles/1e.jpg',
     },
     {
       name: 'Kiran Joshi',
       role: 'App Developer',
-      image: '/images/kiran.jpg',
+      image: '/profiles/1f.png',
     },{
+      name: 'Shamyutha Gembali',
+      role: 'Full Stack Developer',
+      image: '/profiles/1a.png',
+    },
+    {
+      name: 'Swathi Rao',
+      role: 'Frontend Developer',
+      image: '/profiles/1b.png',
+    },
+    {
       name: 'Ravi Kumar',
       role: 'AI/ML Engineer',
-      image: '/images/ravi.jpg',
+      image: '/profiles/1a.png',
     },
     {
       name: 'Anjali Mehra',
       role: 'UI/UX Designer',
-      image: '/images/anjali.jpg',
+      image: '/profiles/1d.webp',
     },
     {
       name: 'Vikram Reddy',
       role: 'Data Analyst',
-      image: '/images/vikram.jpg',
+      image: '/profiles/1e.jpg',
     },
     {
       name: 'Kiran Joshi',
       role: 'App Developer',
-      image: '/images/kiran.jpg',
-    },{
-      name: 'Ravi Kumar',
-      role: 'AI/ML Engineer',
-      image: '/images/ravi.jpg',
+      image: '/profiles/1f.png',
     },
-    {
-      name: 'Anjali Mehra',
-      role: 'UI/UX Designer',
-      image: '/images/anjali.jpg',
-    },
-    {
-      name: 'Vikram Reddy',
-      role: 'Data Analyst',
-      image: '/images/vikram.jpg',
-    },
-    {
-      name: 'Kiran Joshi',
-      role: 'App Developer',
-      image: '/images/kiran.jpg',
-    },{
-      name: 'Ravi Kumar',
-      role: 'AI/ML Engineer',
-      image: '/images/ravi.jpg',
-    },
-    {
-      name: 'Anjali Mehra',
-      role: 'UI/UX Designer',
-      image: '/images/anjali.jpg',
-    },
-    {
-      name: 'Vikram Reddy',
-      role: 'Data Analyst',
-      image: '/images/vikram.jpg',
-    },
-    {
-      name: 'Kiran Joshi',
-      role: 'App Developer',
-      image: '/images/kiran.jpg',
-    }
     // ... more repeated entries
   ];
 

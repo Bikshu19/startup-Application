@@ -25,7 +25,7 @@ function Navbar() {
                   key={i}
                   to={text.link}
                   className="text-black px-4 py-2 rounded-full transition duration-300
-                    hover:bg-[#22074d] hover:text-white hover:font-semibold"
+                    hover:bg-[#22074d] hover:text-white hover:font-semibold bg-white/30"
                 >
                   
                   {text.name}

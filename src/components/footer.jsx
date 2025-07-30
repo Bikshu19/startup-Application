@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -30,30 +31,32 @@ function Footer() {
           {
             title: 'Courses',
             items: ['Data Science', 'Java Full Stack', 'Web Development', 'React.js'],
+            link:'/courses'
           },
           {
             title: 'Company',
             items: ['About Us', 'How We Work', 'Our Partners', 'Careers'],
+            link:'/about'
           },
           {
             title: 'Support',
             items: ['Contact', 'FAQs', 'Help Center', 'Privacy Policy'],
+            link:'/contact'
           },
           {
             title: 'Connect',
             items: ['LinkedIn', 'Instagram', 'Facebook', 'YouTube'],
+            link:'/contact'
           },
         ].map((section, idx) => (
           <div key={idx}>
-            <h2 className="title-font font-semibold text-gray-900 text-sm mb-4">
+            <h2 className="title-font font-semibold text-gray-900 text-sm mb-4 hover:cursor-pointer">
               {section.title}
             </h2>
             <ul className="space-y-2">
               {section.items.map((item, i) => (
                 <li key={i}>
-                  <a className="text-gray-600 hover:text-[#320A6B] transition duration-200 cursor-pointer">
-                    {item}
-                  </a>
+                  <Link to={section.link} className="text-gray-600 hover:text-[#320A6B] transition duration-200 cursor-pointer">{item}</Link>
                 </li>
               ))}
             </ul>

@@ -12,7 +12,7 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop /> {/* ✅ add this just after BrowserRouter */}
+      <ScrollToTop />
       <div>
         <Routes>
           <Route path="/" element={<Homepage />} />
